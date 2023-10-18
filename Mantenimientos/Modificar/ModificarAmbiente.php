@@ -10,7 +10,7 @@
 
 <body>
     <?php
-    require("../../../conexion.php");
+    require("../../conexion.php");
     if (isset($_POST['btnModificar'])) {
         if (
             isset($_POST['Codigo'])==true &&
@@ -29,7 +29,7 @@
                 $sentencia->execute([$numAmbiente, $nombre, $codigo]);
 
                 echo "Ambiente modificado";
-                echo "<a href='../../Ambiente.php' class='btn btn-info'> Regresar a mantenimiento</a>";
+                echo "<a href='../Ambiente.php' class='btn btn-info'> Regresar a mantenimiento</a>";
             } catch (PDOException $e) {
                 echo "ERROR: ", $e->getMessage();
             }
@@ -64,7 +64,7 @@
                 </div>
             </form>
             <br>
-            <a href="../../Ambiente.php" class="btn btn-success form-control">Regresar a mantenimiento</a>
+            <a href="../Ambiente.php" class="btn btn-success form-control">Regresar a mantenimiento</a>
         </div>
     <?php
     }

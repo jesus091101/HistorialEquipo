@@ -41,7 +41,7 @@
                         echo ("<td>" . $fila['NumAmbiente'] . "</td>");
                         echo ("<td>" . $fila['Nombre'] . "</td>");
                         echo ("<td>" . $fila['Vigente'] . "</td>");
-                        echo ("<td>" . "<a href='Registros/Modificar/ModificarAmbiente.php?Codigo={$fila['Codigo']}' class='btn btn-danger'>Modificar</a>" . "</td>");
+                        echo ("<td>" . "<a href='Modificar/ModificarAmbiente.php?Codigo={$fila['Codigo']}' class='btn btn-danger'>Modificar</a>" . "</td>");
                         echo ("</tr>");
                     }
                     ?>
