@@ -26,7 +26,7 @@
                     </tr>
                     <?php
                     require("../conexion.php");
-                    //Buscar 
+                    //Buscar 2.0
                     // Verifica si se ha enviado una consulta de búsqueda
                     if (isset($_POST['search'])) {
                         $searchTerm = $_POST['search'];
@@ -46,7 +46,7 @@
                     // Formato de devolución
                     $sentencia->setFetchMode(PDO::FETCH_ASSOC);
                     $sentencia->execute();
-
+                      
                     // Recorre la sentencia y sus resultados
                     while ($fila = $sentencia->fetch()) {
                         echo ("<tr>");
