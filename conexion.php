@@ -3,7 +3,7 @@
     $user = "root";
     $base = "bd_historialequipo";
     $port = "3307";
-    $password = "martin";
+    $password = "epici";
    
     try {
         // Intentar establecer la conexión
