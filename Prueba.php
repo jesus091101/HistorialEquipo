@@ -13,19 +13,23 @@
                 <h2>MANTENIMIENTO DE AMBIENTE</h2>
                 <a href="Registros/RegistrarAmbiente.php" class="btn btn-success">Nuevo ambiente</a>
                 <input type="text" id="search" placeholder="Buscar por número de ambiente">
+                
+                <!-- Div para contenido AJAX -->
+                <div id="contenidoAjax">
+                    <table class="table table-ms">
+                        <tr>
+                            <td>ID</td>
+                            <td>N° Ambiente</td>
+                            <td>Nombre</td>
+                            <td>Vigente</td>
+                            <td>Operaciones</td>
+                        </tr>
+                        <tbody id="searchResults"></tbody>
+                    </table>
+                </div>
             </main>
         </div>
     </div>
-    <table class="table table-ms">
-        <tr>
-            <td>ID</td>
-            <td>N° Ambiente</td>
-            <td>Nombre</td>
-            <td>Vigente</td>
-            <td>Operaciones</td>
-        </tr>
-        <tbody id="searchResults"></tbody>
-    </table>
 
     <script>
         document.getElementById('search').addEventListener('input', function() {
