@@ -1,43 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <title>Document</title>
 </head>
+
 <style>
     .buscar-input {
         width: 200px;
         height: 35px;
     }
+
     .margen-superior {
-        margin-top: 30px;
-    }
-    .margen-izquierda {
-        margin-left: 10px;
+        margin-top: 20px;
     }
 </style>
+
 <body>
     <div class="container-fluid">
         <div class="row">
-            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
-                <h2 class="margen-superior">MANTENIMIENTO DE AMBIENTE</h2>
-
-                <div class="d-flex justify-content-between align-items-center margen-superior">
-                    <div class="d-flex margen-izquierda">
-                        <form action="" method="post" class="mr-2">
-                            <div class="form-group">
-                                <input type="text" name="search" class="form-control buscar-input" placeholder="Buscar por número de ambiente">
-                            </div>
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 margen-superior">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h2>MANTENIMIENTO DE AMBIENTE</h2>
+                    <div>
+                        <form action="" method="post">
+                            <input type="text" name="search" class="buscar-input" placeholder="Buscar por número de ambiente">
+                            <button type="submit" class="btn btn-success">Buscar</button>
                         </form>
-                        <button type="submit" class="btn btn-success">Buscar</button>
+                        <a href="Registros/RegistrarAmbiente.php" class="btn btn-success">Nuevo ambiente</a>
                     </div>
-
-                    <a href="Registros/RegistrarAmbiente.php" class="btn btn-success">Nuevo ambiente</a>
                 </div>
 
-                <table class="table table-ms margen-superior">
+                <table class="table table-ms">
                     <tr>
                         <td>ID</td>
                         <td>N° Ambiente</td>
@@ -80,4 +77,5 @@
         </div>
     </div>
 </body>
+
 </html>
