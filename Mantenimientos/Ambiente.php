@@ -56,7 +56,7 @@
                         // Si no hay consulta de búsqueda, muestra todos los registros
                         $sentencia = $conexion->prepare("SELECT * FROM ambiente");
                     }
-                    
+                    //Holaaaaaaaaaaaaaaaaaaaaaaa
                     // Formato de devolución
                     $sentencia->setFetchMode(PDO::FETCH_ASSOC);
                     $sentencia->execute();
